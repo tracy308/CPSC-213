@@ -1,0 +1,6 @@
+When I "make" the code, the compiler gave a warning as shown below:
+
+	printf("  You are visitor #%s.\n", id);
+                             	   ~~      ^~
+                             	   %d
+Hence, I think changing it to "%d" will help solve the problem.
