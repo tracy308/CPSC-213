@@ -1,0 +1,10 @@
+read:
+1 -> read the address of a then get the address of x[i]
+2 -> read the address of a then get the address of b.y[i]
+3,4,5 -> read the address of a to get address of b.a, then read again to get address of *x, and then one more read to get x[i]
+6 -> read the address of a to get b.a
+7,8 -> read the address of a to get address of b.a and then read again to get b.y[i]
+
+Therefore, there will be a minimum of 8 memory reads
+
+The minimum writes we have to do is for each of v0, v1, v2, v3 and also a->b.a. Such that it adds up to five writes minimum.
