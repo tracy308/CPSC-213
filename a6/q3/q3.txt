@@ -1,0 +1,1 @@
+Element delete was causing a dangling pointer problem because we deleted the element despite the fact that other are still using it. We can resolve this problem by refactoring the code with reference counting, such that it can help keep track of the number of pointers pointing to each element and free it after to prevent memory leak.
