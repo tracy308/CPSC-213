@@ -1,0 +1,9 @@
+Decimal: 521829 Hex: 0007F665
+Decimal: -2256461 Hex: FFDD91B3
+
+The computer on the Hubble uses big endian, while our computer uses Intel proccesser, using little endian,
+so we need to change the endianness to correctly interpret the data.
+
+Hence the two values are:
+0x65F60700
+0xB391DDFF

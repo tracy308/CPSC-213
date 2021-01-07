@@ -1,0 +1,3 @@
+Example: 0x10222210
+Any integer where the first and the fourth byte must be the same, and the second and third byte are the same
+have the same big- and little-endian representation.

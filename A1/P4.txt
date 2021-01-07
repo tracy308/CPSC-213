@@ -1,0 +1,10 @@
+Cases to test
+- 00 00 00 00 -> Base Case
+- 00 00 00 01 -> big endian value should be one
+- 01 00 00 00 -> little endian value should be one
+- 00 00 00 80 -> big endian value should be positive & little endian will be smallest possible int value
+- 80 00 00 00 -> little endian value should be positive & big endian will be smallest possible int value
+- 7F FF FF FF -> big endian value should be largest possible value
+- FF FF FF 7F -> little endian value should be largest possible value
+- 12 34 34 12 -> little endian and big endian should have the same value
+- FF FF FF FF -> largest possible hex number with 4 bytes; both little and big endian value should be -1
