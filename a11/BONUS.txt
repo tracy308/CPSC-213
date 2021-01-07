@@ -1,0 +1,6 @@
+Most people in general waited less in well_sem compared to well.
+In the well.c, we used cond, as such the signal must be after the wait.
+However, implementing semaphores allows the signaling to be called ahead of time,
+such that we only need to have n signals for n drinkers.
+Therefore, in the original version, the drinkers waited for longer and more signaling are used,
+such as to protect the critical sections/prevent race conditions that resulted in deadlocks.
